@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="18" passed="11" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-31T13:55:16Z" name="Suite" finished-at="2022-03-31T13:59:07Z" duration-ms="231061">
+    <groups>
+      <group name="sanity">
+        <method signature="ShoeValidation.filter()[pri:2, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" name="filter" class="com.amazon.stepdefinitions.ShoeValidation"/>
+        <method signature="ShoeValidation.footwear()[pri:1, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" name="footwear" class="com.amazon.stepdefinitions.ShoeValidation"/>
+        <method signature="TvValidation.scroldown()[pri:2, instance:com.amazon.stepdefinitions.TvValidation@6e005dc9]" name="scroldown" class="com.amazon.stepdefinitions.TvValidation"/>
+        <method signature="TvValidation.tvclick()[pri:1, instance:com.amazon.stepdefinitions.TvValidation@6e005dc9]" name="tvclick" class="com.amazon.stepdefinitions.TvValidation"/>
+        <method signature="ShoeValidation.filter()[pri:2, instance:com.amazon.stepdefinitions.ShoeValidation@44d52de2]" name="filter" class="com.amazon.stepdefinitions.ShoeValidation"/>
+        <method signature="ShoeValidation.footwear()[pri:1, instance:com.amazon.stepdefinitions.ShoeValidation@44d52de2]" name="footwear" class="com.amazon.stepdefinitions.ShoeValidation"/>
+        <method signature="TvValidation.scroldown()[pri:2, instance:com.amazon.stepdefinitions.TvValidation@60410cd]" name="scroldown" class="com.amazon.stepdefinitions.TvValidation"/>
+        <method signature="TvValidation.tvclick()[pri:1, instance:com.amazon.stepdefinitions.TvValidation@60410cd]" name="tvclick" class="com.amazon.stepdefinitions.TvValidation"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2022-03-31T13:55:16Z" name="Test1" finished-at="2022-03-31T13:58:00Z" duration-ms="164933">
+      <class name="com.amazon.stepdefinitions.TvValidation">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.amazon.stepdefinitions.TvValidation@6e005dc9]" started-at="2022-03-31T13:55:16Z" name="beforeclass" finished-at="2022-03-31T13:55:40Z" duration-ms="24605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="tvclick()[pri:1, instance:com.amazon.stepdefinitions.TvValidation@6e005dc9]" started-at="2022-03-31T13:55:40Z" name="tvclick" finished-at="2022-03-31T13:55:45Z" duration-ms="4423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tvclick -->
+        <test-method signature="scroldown()[pri:2, instance:com.amazon.stepdefinitions.TvValidation@6e005dc9]" started-at="2022-03-31T13:57:09Z" name="scroldown" finished-at="2022-03-31T13:57:09Z" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scroldown -->
+        <test-method signature="prodclick()[pri:3, instance:com.amazon.stepdefinitions.TvValidation@6e005dc9]" started-at="2022-03-31T13:57:29Z" name="prodclick" finished-at="2022-03-31T13:57:39Z" duration-ms="10039" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'50')])[8]"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2H6M1BJ', ip: '192.168.64.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Franky\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a7797cdf017e1734370efe83a7a2887
+*** Element info: {Using=xpath, value=(//span[contains(text(),'50')])[8]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'50')])[8]"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2H6M1BJ', ip: '192.168.64.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Franky\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a7797cdf017e1734370efe83a7a2887
+*** Element info: {Using=xpath, value=(//span[contains(text(),'50')])[8]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.amazon.stepdefinitions.TvValidation.prodclick(TvValidation.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prodclick -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.amazon.stepdefinitions.TvValidation@6e005dc9]" started-at="2022-03-31T13:57:39Z" name="afterclass" finished-at="2022-03-31T13:57:39Z" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- com.amazon.stepdefinitions.TvValidation -->
+      <class name="com.amazon.stepdefinitions.ShoeValidation">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" started-at="2022-03-31T13:55:45Z" name="beforeclass" finished-at="2022-03-31T13:56:02Z" duration-ms="17127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="footwear()[pri:1, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" started-at="2022-03-31T13:56:02Z" name="footwear" finished-at="2022-03-31T13:57:09Z" duration-ms="67386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footwear -->
+        <test-method signature="filter()[pri:2, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" started-at="2022-03-31T13:57:09Z" name="filter" finished-at="2022-03-31T13:57:29Z" duration-ms="20020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filter -->
+        <test-method signature="selection()[pri:3, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" started-at="2022-03-31T13:57:39Z" name="selection" finished-at="2022-03-31T13:57:40Z" duration-ms="435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selection -->
+        <test-method signature="windowhandling()[pri:4, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" started-at="2022-03-31T13:57:40Z" name="windowhandling" finished-at="2022-03-31T13:57:40Z" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowhandling -->
+        <test-method signature="dropdown()[pri:5, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" started-at="2022-03-31T13:57:40Z" name="dropdown" finished-at="2022-03-31T13:58:00Z" duration-ms="20278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropdown -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.amazon.stepdefinitions.ShoeValidation@7ceb3185]" started-at="2022-03-31T13:58:00Z" name="afterclass" finished-at="2022-03-31T13:58:00Z" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- com.amazon.stepdefinitions.ShoeValidation -->
+    </test> <!-- Test1 -->
+    <test started-at="2022-03-31T13:58:00Z" name="Test2" finished-at="2022-03-31T13:59:07Z" duration-ms="66109">
+      <class name="com.amazon.stepdefinitions.TvValidation">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.amazon.stepdefinitions.TvValidation@60410cd]" started-at="2022-03-31T13:58:00Z" name="beforeclass" finished-at="2022-03-31T13:58:14Z" duration-ms="13135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="tvclick()[pri:1, instance:com.amazon.stepdefinitions.TvValidation@60410cd]" started-at="2022-03-31T13:58:14Z" name="tvclick" finished-at="2022-03-31T13:58:18Z" duration-ms="4791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tvclick -->
+        <test-method signature="scroldown()[pri:2, instance:com.amazon.stepdefinitions.TvValidation@60410cd]" started-at="2022-03-31T13:58:59Z" name="scroldown" finished-at="2022-03-31T13:58:59Z" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scroldown -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.amazon.stepdefinitions.TvValidation@60410cd]" started-at="2022-03-31T13:58:59Z" name="afterclass" finished-at="2022-03-31T13:58:59Z" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- com.amazon.stepdefinitions.TvValidation -->
+      <class name="com.amazon.stepdefinitions.ShoeValidation">
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:com.amazon.stepdefinitions.ShoeValidation@44d52de2]" started-at="2022-03-31T13:58:18Z" name="beforeclass" finished-at="2022-03-31T13:58:35Z" duration-ms="16605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method signature="footwear()[pri:1, instance:com.amazon.stepdefinitions.ShoeValidation@44d52de2]" started-at="2022-03-31T13:58:35Z" name="footwear" finished-at="2022-03-31T13:58:59Z" duration-ms="23956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footwear -->
+        <test-method signature="filter()[pri:2, instance:com.amazon.stepdefinitions.ShoeValidation@44d52de2]" started-at="2022-03-31T13:58:59Z" name="filter" finished-at="2022-03-31T13:59:06Z" duration-ms="7178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filter -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:com.amazon.stepdefinitions.ShoeValidation@44d52de2]" started-at="2022-03-31T13:59:06Z" name="afterclass" finished-at="2022-03-31T13:59:07Z" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- com.amazon.stepdefinitions.ShoeValidation -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

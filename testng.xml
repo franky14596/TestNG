@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test1">
+    <classes>
+      <class name="com.amazon.stepdefinitions.TvValidation"/>
+      <class name="com.amazon.stepdefinitions.ShoeValidation"/>
+    </classes>
+  </test> 
+  <test name="Test2">
+  <groups>
+    <run>
+    <include name = "default"></include>
+    <include name ="sanity"></include>
+    </run>
+    </groups>
+    <classes>
+          <class name="com.amazon.stepdefinitions.TvValidation"/>
+      <class name="com.amazon.stepdefinitions.ShoeValidation"/>
+    </classes>
+  </test> 
+</suite> 
